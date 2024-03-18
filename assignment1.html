@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .container {
+        background-color: palevioletred;
+      }
+
+      h1 {
+        text-align: center;
+        color: rgb(4, 4, 65);
+        text-decoration: wavy underline;
+      }
+      #i1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+      }
+      #i2 {
+        border-radius: 20px;
+        margin-right: 15px;
+        margin-bottom: 25px;
+      }
+      #xx {
+        display: flex;
+      }
+      p {
+        padding: 20px;
+      }
+      #div3 {
+        background-color: white;
+        display: block;
+        height: 400px;
+        width: 100%;
+        border: solid black;
+        position: relative;
+      }
+      #div {
+        background-color: orange;
+        border-radius: 150px;
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        animation: bounce 1s infinite alternate, moveForward 2s linear infinite;
+      }
+      @keyframes bounce {
+        0% {
+          bottom: 0;
+        }
+        100% {
+          bottom: 450px;
+        }
+      }
+
+      @keyframes moveForward {
+        0% {
+          left: 0;
+          background-color: yellow;
+        }
+        50% {
+          left: 50%;
+          bottom: 0;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="div1">
+      <div class="container">
+        <h1>Welcome to my webpage</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit ut
+          suscipit necessitatibus excepturi maiores nesciunt, officia ipsam
+          laboriosam vel id, reprehenderit corporis illo est quas corrupti
+          placeat enim veniam. Fugiat. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Explicabo cupiditate eveniet sint, aperiam rerum
+          laudantium vero illo omnis. Velit dolores modi tempore perferendis
+          eaque quidem reiciendis perspiciatis adipisci dicta quasi! Lorem ipsum
+          dolfqqor sit, amet consectetur adipisicing elit. Nobis quod aut
+          voluptatibus, enim ea ducimus ratione magnam sed temporibus hic sit,
+          ab, eligendi animi! Distinctio nemo aut voluptates maxime laboriosam.
+        </p>
+        <img src="../../../CSS/JAVASCRIPT/sam.png" id="i1" />
+        <div id="xx">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint iste
+            aliquam, repudiandae ipsam qui impedit quam magnam saepe voluptatem
+            officia expedita blanditiis enim maiores ut sit, velit, consectetur
+            earum animi! Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Maiores quos vitae culpa, accusantium dolorum natus error non,
+            eaque, omnis voluptatem voluptatum itaque corporis consequuntur
+            similique exercitationem facere. Quam, aspernatur commodi.
+          </p>
+          <img src="../../../CSS/JAVASCRIPT/sam.png" id="i2" />
+        </div>
+      </div>
+    </div>
+    <div id="div3">
+      <div id="div"></div>
+    </div>
+  </body>
+</html>
